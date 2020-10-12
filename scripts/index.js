@@ -61,6 +61,9 @@ xhr.onload = function () {
       console.log("LOOP uRLLLLLLLLLL", articles[article].multimedia[2].url);
 
     }
+    if(imageURL === ""){
+      imageURL ="assets/pictures/defaultNewsImage.PNG";
+    }
     // console.log("uRLLLLLLLLLL",articles[article].multimedia[2].url);
     html += `
         <div style="width: 384px;height: 767px;padding: 49px 0px 20px 25px;" class="backImage ml-3 mb-3">
